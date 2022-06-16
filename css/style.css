@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.naruto-box img{
+    width: 25%;
+}
+
+.rps-box img{
+    width: 25%;
+    cursor: pointer;
+}
+.rps-box img:hover{
+    background-color: blue;
+}
+#newrps{
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    border: 1px solid black; 
+    padding: 130px;
+}
+.first-row button{
+    width: 5rem;
+}
+.second-row button, .third-row button{
+    width: 5rem;
+}

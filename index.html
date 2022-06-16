@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="calculator m-5 p-5 border border-dark">
+        <div class="screen border border-dark p-5 m-5 d-flex justify-content-center">
+        </div>
+        <div class="calculator-body">
+            <div class="first-row d-flex justify-content-center">
+                <button type = "button" class ="btn btn-outline-dark mt-3">CLS</button>
+            </div>
+            <div class="second-row d-flex justify-content-center gap-4">
+                <button type = "button" class ="btn btn-outline-dark mt-3" onclick="display()">1</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">2</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">3</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">4</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">5</button>
+            </div>
+            <div class="third-row d-flex justify-content-center gap-4">
+                <button type = "button" class ="btn btn-outline-dark mt-3">6</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">7</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">8</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">9</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">0</button>
+            </div>
+            <div class="third-row d-flex justify-content-center gap-4">
+                <button type = "button" class ="btn btn-outline-dark mt-3">/</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">x</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">-</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">+</button>
+                <button type = "button" class ="btn btn-outline-dark mt-3">=</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="bmi m-5">
+        <label for="fnum">First number:</label>
+        <input type="text" id="fnum" name="fnum"><br><br>
+        <label for="lnum">Last number:</label>
+        <input type="text" id="lnum" name="lnum"><br><br>
+
+        <button class="btn btn-primary" onclick="calcme()">Calculate</button>
+        <!-- <input type="text" id="result" name="result"><br><br> -->
+        <p id="result"></p>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
