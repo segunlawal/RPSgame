@@ -15,51 +15,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="calculator m-5 p-5 border border-dark">
-        <div class="screen border border-dark p-5 m-5 d-flex justify-content-center">
-        </div>
-        <div class="calculator-body">
-            <div class="first-row d-flex justify-content-center">
-                <button type = "button" class ="btn btn-outline-dark mt-3">CLS</button>
-            </div>
-            <div class="second-row d-flex justify-content-center gap-4">
-                <button type = "button" class ="btn btn-outline-dark mt-3" onclick="display()">1</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">2</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">3</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">4</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">5</button>
-            </div>
-            <div class="third-row d-flex justify-content-center gap-4">
-                <button type = "button" class ="btn btn-outline-dark mt-3">6</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">7</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">8</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">9</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">0</button>
-            </div>
-            <div class="third-row d-flex justify-content-center gap-4">
-                <button type = "button" class ="btn btn-outline-dark mt-3">/</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">x</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">-</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">+</button>
-                <button type = "button" class ="btn btn-outline-dark mt-3">=</button>
-            </div>
-        </div>
 
-    </div>
+    <div class="output"></div>
 
-
-
-    <div class="bmi m-5">
-        <label for="fnum">First number:</label>
-        <input type="text" id="fnum" name="fnum"><br><br>
-        <label for="lnum">Last number:</label>
-        <input type="text" id="lnum" name="lnum"><br><br>
-
-        <button class="btn btn-primary" onclick="calcme()">Calculae</button>
-        <!-- <input type="text" id="result" name="result"><br><br> -->
-        <p id="result"></p>
-    </div>
-    
     <script src="./app.js"></script>
 </body>
 </html>
