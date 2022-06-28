@@ -4,7 +4,7 @@ function computerPlay(){
     var compchoice = compch[Math.floor(Math.random()*3)]
     return compchoice;
 } 
-var computerSelection = computerPlay()
+var computerSelection;
 
 var rock = document.querySelector('.rock')
 var paper = document.querySelector('.paper')
@@ -42,6 +42,22 @@ function playsingleround (playerSelection, computerSelection){
         if(y=='scissors'){tiedraw++; displayResults ('Tie!')}
     }
 
+    function displayResults(str){
+        results.textContent = str;
+        // var img1 = document.createElement('img');
+        // img1.setAttribute('src', './images/rock.png');
+        // var img2 = document.createElement('img');
+        // img2.setAttribute('src', './images/paper.png');
+        // var img3 = document.createElement('img');
+        // img3.setAttribute('src', './images/scissors.png')
+
+        // if(y=='rock'){compbox.textContent = `${img1}`}
+        // if(y=='paper'){compbox.textContent = `${img2}`}
+        // if(y=='scissors'){compbox.textContent = `${img3}`}
+        compbox.textContent = y;
+        scoreboard.textContent = 'Comp- ' + compwin + ' Player- ' + playerwin + ' Tie- ' + tiedraw
+        if(compwin===5 || playerwin===5 || tiedraw === 5){endGame()}
+    }
 }
 
 //DOM
@@ -53,7 +69,7 @@ var displaybox = document.querySelector('.display-box')
 
 function displayResults(str){
     results.textContent = str;
-    compbox.textContent = 'Computer says '+ computerSelection;
+    compbox.textContent = 'Computer says '+ y;
     scoreboard.textContent = 'Comp- ' + compwin + ' Player- ' + playerwin + ' Tie- ' + tiedraw
     if(compwin===5 || playerwin===5 || tiedraw === 5){endGame()}
 }
