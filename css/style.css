@@ -28,7 +28,11 @@
 .second-row button, .third-row button{
     width: 5rem;
 }
-.output button img, .comp-box img{
+.output button img{
     width: 100px;
     height: 100px;
+}
+.response-box img{
+    width: 100px;
+
 }

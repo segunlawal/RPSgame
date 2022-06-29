@@ -44,17 +44,16 @@ function playsingleround (playerSelection, computerSelection){
 
     function displayResults(str){
         results.textContent = str;
-        // var img1 = document.createElement('img');
-        // img1.setAttribute('src', './images/rock.png');
-        // var img2 = document.createElement('img');
-        // img2.setAttribute('src', './images/paper.png');
-        // var img3 = document.createElement('img');
-        // img3.setAttribute('src', './images/scissors.png')
+        var compResponse = document.querySelector('.comp-response');
+        var playerResponse = document.querySelector('.player-response');
 
-        // if(y=='rock'){compbox.textContent = `${img1}`}
-        // if(y=='paper'){compbox.textContent = `${img2}`}
-        // if(y=='scissors'){compbox.textContent = `${img3}`}
-        compbox.textContent = y;
+        if(x=='rock'){playerResponse.setAttribute('src','./images/rock.png')}
+        if(x=='paper'){playerResponse.setAttribute('src', './images/paper.png')}
+        if(x=='scissors'){playerResponse.setAttribute('src', './images/scissors.png')}
+
+        if(y=='rock'){compResponse.setAttribute('src','./images/rock.png')}
+        if(y=='paper'){compResponse.setAttribute('src', './images/paper.png')}
+        if(y=='scissors'){compResponse.setAttribute('src', './images/scissors.png')}
         scoreboard.textContent = 'Comp- ' + compwin + ' Player- ' + playerwin + ' Tie- ' + tiedraw
         if(compwin===5 || playerwin===5 || tiedraw === 5){endGame()}
     }
