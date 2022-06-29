@@ -87,7 +87,7 @@ function endGame(){
     var a = document.createElement('a');
     a.href = "index.html"
     a.appendChild(button);
-    champbox.appendChild(a);
+    displaybox.appendChild(a);
     button.textContent = 'Play Again'
     
 }
