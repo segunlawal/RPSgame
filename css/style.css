@@ -4,5 +4,10 @@
     box-sizing: border-box;
 }
 .output button img{
-    width: auto;
-    height: 5rem;}
+    width: 100px;
+    height: 100px;
+}
+.output button{
+    width: 150px;
+    height: 150px; 
+}
