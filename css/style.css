@@ -4,10 +4,5 @@
     box-sizing: border-box;
 }
 .output button img{
-    width: 100px;
-    height: 100px;
-}
-.response-box img{
     width: auto;
-    height: 100px;
-}
+    height: 5rem;}
