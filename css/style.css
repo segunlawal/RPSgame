@@ -11,3 +11,6 @@
     width: 15vw;
     height: 15vw; 
 }
+.response-box{
+    visibility: hidden;
+}

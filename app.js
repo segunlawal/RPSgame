@@ -43,6 +43,7 @@ function playsingleround (playerSelection, computerSelection){
     }
 
     function displayResults(str){
+        responsebox.style.visibility = "visible";
         results.textContent = str;
         var compResponse = document.querySelector('.comp-response');
         var playerResponse = document.querySelector('.player-response');
@@ -61,10 +62,10 @@ function playsingleround (playerSelection, computerSelection){
 
 //DOM
 var results = document.querySelector('.results')
-var compbox = document.querySelector('.comp-box')
 var scoreboard = document.querySelector('.score-board')
 var champbox = document.querySelector('.champ-box')
 var displaybox = document.querySelector('.display-box')
+var responsebox = document.querySelector('.response-box')
 
 function displayResults(str){
     results.textContent = str;
