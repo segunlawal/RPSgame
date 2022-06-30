@@ -7,12 +7,7 @@
     width: 100px;
     height: 100px;
 }
-.output button{
-    width: 150px;
-    height: 150px;
-}
 .response-box img{
-    width: 100px;
+    width: auto;
     height: 100px;
-
 }
