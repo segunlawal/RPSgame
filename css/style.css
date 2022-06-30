@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 .output button img{
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
 }
-.output button{
-    width: 150px;
-    /* height: 150px;  */
+.output button, .response-box img{
+    width: 15vw;
+    height: 15vw; 
 }
