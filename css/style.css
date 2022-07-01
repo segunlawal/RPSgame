@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Yellowtail', cursive;
+}
+body{
+background-image: url(../images/bg.jpg);
+background-size: cover;
 }
 .output button img{
     width: 10vw;

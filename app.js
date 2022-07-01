@@ -66,6 +66,7 @@ var scoreboard = document.querySelector('.score-board')
 var champbox = document.querySelector('.champ-box')
 var displaybox = document.querySelector('.display-box')
 var responsebox = document.querySelector('.response-box')
+var endbox = document.querySelector('.end-box')
 
 function displayResults(str){
     results.textContent = str;
@@ -75,9 +76,10 @@ function displayResults(str){
 }
 
 function endGame(){
-    if(compwin===5){displaybox.textContent = 'Hard luck! The computer won!!';}
-    else if (playerwin===5){displaybox.textContent = 'Well done Champ! You won!!'}
-    else if (tiedraw===5){displaybox.textContent =  'The game ended in a draw!'}
+    displaybox.textContent = '';
+    if(compwin===5){endbox.textContent = 'Hard luck! The computer won!!';}
+    else if (playerwin===5){endbox.textContent = 'Well done Champ! You won!!'}
+    else if (tiedraw===5){endbox.textContent =  'The game ended in a draw!'}
     //Disable buttons at the end of the game
     rock.setAttribute("disabled", 1);
     paper.setAttribute("disabled", 1);
@@ -88,7 +90,7 @@ function endGame(){
     var a = document.createElement('a');
     a.href = "index.html"
     a.appendChild(button);
-    displaybox.appendChild(a);
+    endbox.appendChild(a);
     button.textContent = 'Play Again'
     
 }
